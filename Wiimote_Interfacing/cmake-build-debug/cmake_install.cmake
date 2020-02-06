@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/timot/Desktop/3rd Quarter Project/3rd-Quarter-Project/Wiimote_Interfacing
+# Install script for directory: C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/Wiimote_Interfacing
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/timot/Desktop/3rd Quarter Project/3rd-Quarter-Project/Wiimote_Interfacing/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/Wiimote_Interfacing/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

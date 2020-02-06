@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+int m();
+
 int main() {
     return m();
 }
