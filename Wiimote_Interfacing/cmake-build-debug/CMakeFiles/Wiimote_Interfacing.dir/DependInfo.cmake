@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/Wiimote_Interfacing/main.c" "C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/Wiimote_Interfacing/cmake-build-debug/CMakeFiles/Wiimote_Interfacing.dir/main.c.obj"
+  "C:/Users/timot/Desktop/3rd Quarter Project/3rd-Quarter-Project/Wiimote_Interfacing/main.c" "C:/Users/timot/Desktop/3rd Quarter Project/3rd-Quarter-Project/Wiimote_Interfacing/cmake-build-debug/CMakeFiles/Wiimote_Interfacing.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
