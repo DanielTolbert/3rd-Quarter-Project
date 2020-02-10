@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="WiiUse"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;CMake Files\cmake\cmake-4.0.0-modules\;CMake Files\src\;CMake Files\example\;CMake Files\example-sdl\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package">
+				<Option working_dir="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 package"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package_source">
+				<Option working_dir="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 package_source"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wiiuse">
+				<Option output="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/src/libwiiuse_debug.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DWITH_WIIUSE_DEBUG"/>
+					<Add option="-DWIIUSE_COMPILE_LIB"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 wiiuse"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wiiuse/fast">
+				<Option output="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/src/libwiiuse_debug.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/src"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DWITH_WIIUSE_DEBUG"/>
+					<Add option="-DWIIUSE_COMPILE_LIB"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 wiiuse/fast"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wiiuseexample">
+				<Option output="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/example/wiiuseexample.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/example"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/example/../src"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/example/Makefile&quot;  VERBOSE=1 wiiuseexample"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="wiiuseexample/fast">
+				<Option output="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/example/wiiuseexample.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/example"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/example/../src"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/example/Makefile&quot;  VERBOSE=1 wiiuseexample/fast"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/example/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/example/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake-build-debug/example/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/example/example.c">
+			<Option target="wiiuseexample"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/classic.c">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/classic.h">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/definitions.h">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/definitions_os.h">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/dynamics.c">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/dynamics.h">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/events.c">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/events.h">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/guitar_hero_3.c">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/guitar_hero_3.h">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/io.c">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/io.h">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/ir.c">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/ir.h">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/motion_plus.c">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/motion_plus.h">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/nunchuk.c">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/nunchuk.h">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/os.h">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/os_win.c">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/util.c">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/wiiboard.c">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/wiiboard.h">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/wiiuse.c">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/wiiuse.h">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/wiiuse_internal.h">
+			<Option target="wiiuse"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/ParseVersion.cmake">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake/CleanDirectoryList.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake/DoxygenTargets.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake/FindGLUT.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake/FindWinHID.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake/GetCompilerInfoString.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake/MinGWSearchPathExtras.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake/UseBackportedModules.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake/cmake-4.0.0-modules/RequireOutOfSourceBuild.cmake">
+			<Option virtualFolder="CMake Files\cmake\cmake-4.0.0-modules\"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/cmake/cmake-4.0.0-modules/autoinclude.cmake">
+			<Option virtualFolder="CMake Files\cmake\cmake-4.0.0-modules\"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/example/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\example\"/>
+		</Unit>
+		<Unit filename="C:/Users/jmz00/Git/4th-Year-Project/3rd-Quarter-Project/wiiuse-master/example-sdl/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\example-sdl\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
