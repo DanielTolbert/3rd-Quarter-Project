@@ -1,4 +1,4 @@
-public class Point {
+public class Point implements Comparable{
 
     private int x;
     private int y;
@@ -59,5 +59,27 @@ public class Point {
 
     public void setPointRadius(int pointRadius) {
         this.pointRadius = pointRadius;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Point op = (Point)o;
+        if (this.getX() > op.getX()) {
+            return 1;
+        } else if (this.getX() < op.getX()) {
+            return -1;
+        }
+        return 0;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        Point op = (Point)o;
+        return this.getX() == op.getX() &&
+                this.getY() == op.getY() &&
+                this.getZ() == op.getZ() &&
+                this.getColor() == op.getColor() &&
+                this.getPointRadius() == op.getPointRadius();
+
     }
 }

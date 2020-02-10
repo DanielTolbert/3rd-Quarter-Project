@@ -1,7 +1,9 @@
 import peasy.PeasyCam;
 import processing.core.PApplet;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Graph extends PApplet {
 
@@ -14,8 +16,18 @@ public class Graph extends PApplet {
 
     public void setup() {
         peasyCam = new PeasyCam(this, 500);
-        peasyCam.setMinimumDistance(200);
+        peasyCam.setMinimumDistance(100);
         peasyCam.setMaximumDistance(500);
+
+        int pointColors = color(255, 0, 0);
+        createDataPoint(10, 10, 10, 5, pointColors);
+        createDataPoint(25, 10, 50, 5, pointColors);
+        createDataPoint(25, 30, 10, 5, pointColors);
+        createDataPoint(75, 10, 50, 5, pointColors);
+        createDataPoint(100, 5, 75, 5, pointColors);
+        createDataPoint(68, 2, 10, 5, pointColors);
+        createDataPoint(47, 87, 30, 5, pointColors);
+
     }
 
     public void draw() {
@@ -76,11 +88,8 @@ public class Graph extends PApplet {
 //        fill(0,255,0);
 //        sphere(2);
 
-        createDataPoint(10, 10, 10, 5);
-        createDataPoint(25, 10, 50, 5);
-        createDataPoint(25, 30, 10, 5);
-        createDataPoint(75, 10, 50, 5);
-
+        drawDataPoints(points);
+        drawLines(points);
 
 //        translate(25, 10, 50);
 //        noStroke();
@@ -127,22 +136,53 @@ public class Graph extends PApplet {
 
     }
 
-    private void createDataPoint(int x, int y, int z) {
-        points.add(new Point(x, y, z, 2, color(255, 0, 0)));
-        translate(points.get(points.size() - 1).getX(), points.get(points.size() - 1).getY(), points.get(points.size() - 1).getZ());
-        noStroke();
-        lights();
-        fill(points.get( points.size() - 1 ).getColor());
-        sphere(2);
+//    private void createDataPoint(int x, int y, int z) {
+//        points.add(new Point(x, y, z, 2, color(255, 0, 0)));
+//        translate(points.get(points.size() - 1).getX(), points.get(points.size() - 1).getY(), points.get(points.size() - 1).getZ());
+//        noStroke();
+//        lights();
+//        fill(points.get( points.size() - 1 ).getColor());
+//        sphere(2);
+//    }
+
+    private void createDataPoint(int x, int y, int z, int pointRadius, int color) {
+        points.add(new Point(x, y, z, pointRadius, color));
     }
 
-    private void createDataPoint(int x, int y, int z, int pointRadius) {
-        points.add(new Point(x, y, z, pointRadius, color(255, 0, 0)));
-        translate(points.get(points.size() - 1).getX(), points.get(points.size() - 1).getY(), points.get(points.size() - 1).getZ());
-        noStroke();
-        lights();
-        fill(points.get( points.size() - 1 ).getColor());
-        sphere(pointRadius);
+    private void drawDataPoints(List<Point> points) {
+//        translate(points.get(points.size() - 1).getX(), points.get(points.size() - 1).getY(), points.get(points.size() - 1).getZ());
+//        noStroke();
+//        lights();
+//        fill(points.get( points.size() - 1 ).getColor());
+//        sphere(pointRadius);
+        for (Point point : points) {
+            translate(point.getX(), point.getY(), point.getZ());
+            noStroke();
+            lights();
+            fill(point.getColor());
+            box(point.getPointRadius());
+
+        }
+    }
+
+    private void drawLines(ArrayList<Point> points) {
+        int constantX = 135;
+        int constantY = 62;
+        int constantZ = 125;
+        points.sort(Point::compareTo);
+        for (int i = 1; i < points.size(); i++) {
+            Point prevPoint = points.get(i - 1);
+            Point currentPoint = points.get(i);
+            stroke(color(255, 255, 255));
+//            line(prevPoint.getX(), prevPoint.getY(), prevPoint.getZ(), currentPoint.getX(), currentPoint.getY(), currentPoint.getZ());
+            line(currentPoint.getX() ,
+                    currentPoint.getY(),
+                    currentPoint.getZ() ,
+                    prevPoint.getX() ,
+                    prevPoint.getY() ,
+                    prevPoint.getZ() );
+    }
+        System.out.println("Amount of points: " + points.size());
     }
 
     public static void main(String[] args) {
