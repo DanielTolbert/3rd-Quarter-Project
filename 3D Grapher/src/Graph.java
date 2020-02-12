@@ -4,6 +4,8 @@ import processing.core.PApplet;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class Graph extends PApplet {
 
@@ -17,7 +19,7 @@ public class Graph extends PApplet {
     public void setup() {
         peasyCam = new PeasyCam(this, 500);
         peasyCam.setMinimumDistance(100);
-        peasyCam.setMaximumDistance(500);
+        peasyCam.setMaximumDistance(20000);
 
         int pointColors = color(255, 0, 0);
         createDataPoint(10, 10, 10, 5, pointColors);
@@ -80,7 +82,7 @@ public class Graph extends PApplet {
 
         drawGraphLinesVertical(20);
         drawGraphLinesHorizontal(20);
-
+//        drawLines(points);
 
 //        translate(10, 10, 10);
 //        noStroke();
@@ -89,7 +91,9 @@ public class Graph extends PApplet {
 //        sphere(2);
 
         drawDataPoints(points);
-        drawLines(points);
+
+        fill(color(255, 0, 0));
+        line(25, 30, 10, 75, 10, 50);
 
 //        translate(25, 10, 50);
 //        noStroke();
@@ -136,25 +140,11 @@ public class Graph extends PApplet {
 
     }
 
-//    private void createDataPoint(int x, int y, int z) {
-//        points.add(new Point(x, y, z, 2, color(255, 0, 0)));
-//        translate(points.get(points.size() - 1).getX(), points.get(points.size() - 1).getY(), points.get(points.size() - 1).getZ());
-//        noStroke();
-//        lights();
-//        fill(points.get( points.size() - 1 ).getColor());
-//        sphere(2);
-//    }
-
     private void createDataPoint(int x, int y, int z, int pointRadius, int color) {
         points.add(new Point(x, y, z, pointRadius, color));
     }
 
-    private void drawDataPoints(List<Point> points) {
-//        translate(points.get(points.size() - 1).getX(), points.get(points.size() - 1).getY(), points.get(points.size() - 1).getZ());
-//        noStroke();
-//        lights();
-//        fill(points.get( points.size() - 1 ).getColor());
-//        sphere(pointRadius);
+    private void  drawDataPoints(List<Point> points) {
         for (Point point : points) {
             translate(point.getX(), point.getY(), point.getZ());
             noStroke();
@@ -166,23 +156,13 @@ public class Graph extends PApplet {
     }
 
     private void drawLines(ArrayList<Point> points) {
-        int constantX = 135;
-        int constantY = 62;
-        int constantZ = 125;
-        points.sort(Point::compareTo);
-        for (int i = 1; i < points.size(); i++) {
-            Point prevPoint = points.get(i - 1);
-            Point currentPoint = points.get(i);
-            stroke(color(255, 255, 255));
-//            line(prevPoint.getX(), prevPoint.getY(), prevPoint.getZ(), currentPoint.getX(), currentPoint.getY(), currentPoint.getZ());
-            line(currentPoint.getX() ,
-                    currentPoint.getY(),
-                    currentPoint.getZ() ,
-                    prevPoint.getX() ,
-                    prevPoint.getY() ,
-                    prevPoint.getZ() );
-    }
-        System.out.println("Amount of points: " + points.size());
+
+        for (int i = 1; i < points.stream().sorted().collect(Collectors.toList()).size(); i++) {
+            Point prev = points.get( i - 1 );
+            Point curr = points.get( i );
+            line(prev.getX(), prev.getY(), prev.getZ(), curr.getX(), curr.getY(), curr.getZ());
+        }
+
     }
 
     public static void main(String[] args) {
