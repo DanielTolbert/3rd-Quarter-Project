@@ -11,6 +11,8 @@ public class Graph extends PApplet {
 
     private PeasyCam peasyCam;
     private ArrayList<Point> points = new ArrayList<>();
+    int maxDistance = 20000;
+    int minDistance = 100;
 
     public void settings () {
         size(500, 500, P3D);
@@ -42,11 +44,11 @@ public class Graph extends PApplet {
 
         pushMatrix();
         fill(200);
-        rect(0,0,125,125);
+        rect(0,0,maxDistance, maxDistance);
 
         // asse x
         stroke(0,100,0);
-        line(0, 0, 0, 150, 0, 0);
+        line(0, 0, 0, maxDistance, 0, 0);
         fill(0,100,0);
         text("X Axis",140,-5,0);
 
@@ -55,7 +57,7 @@ public class Graph extends PApplet {
 
 
         stroke(255,0,0);
-        line(0, 0, 0, 0, 150, 0);
+        line(0, 0, 0, 0, maxDistance, 0);
 
         pushMatrix();
         rotate(-HALF_PI);
@@ -71,7 +73,7 @@ public class Graph extends PApplet {
 
 
         stroke(0,0,255);
-        line(0, 0, 0, 0, 0, 150);
+        line(0, 0, 0, 0, 0, maxDistance);
         pushMatrix();
         rotateY(-HALF_PI);
         fill(0,0,255);
@@ -80,8 +82,8 @@ public class Graph extends PApplet {
 
 
 
-        drawGraphLinesVertical(20);
-        drawGraphLinesHorizontal(20);
+        drawGraphLinesVertical(maxDistance);
+        drawGraphLinesHorizontal(maxDistance);
 //        drawLines(points);
 
 //        translate(10, 10, 10);
@@ -120,8 +122,8 @@ public class Graph extends PApplet {
     private void drawGraphLinesVertical(int lines) {
         stroke(200);
         for (int i = 10; i < (lines * 10); i += 10) {
-            line(i, 0, 0, i, 0, 250);
-            line(0, i, 0, 0, i, 250);
+            line(i, 0, 0, i, 0, maxDistance);
+            line(0, i, 0, 0, i, maxDistance);
         }
     }
 
@@ -134,8 +136,8 @@ public class Graph extends PApplet {
 
 
         for (int i = 10; i < (lines * 10); i += 10) {
-            line(0, 0, i, 0, 200, i);
-            line(0, 0, i, 200, 0, i);
+            line(0, 0, i, 0, maxDistance, i);
+            line(0, 0, i, maxDistance, 0, i);
         }
 
     }
@@ -150,7 +152,7 @@ public class Graph extends PApplet {
             noStroke();
             lights();
             fill(point.getColor());
-            box(point.getPointRadius());
+            sphere(point.getPointRadius());
 
         }
     }
