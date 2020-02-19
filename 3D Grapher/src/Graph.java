@@ -33,6 +33,7 @@ public class Graph extends PApplet {
         createDataPoint(68, 2, 10, 5, pointColors);
         createDataPoint(47, 87, 30, 5, pointColors);
     }
+    
 
     public void draw() {
 
