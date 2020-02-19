@@ -3,6 +3,7 @@ import processing.core.PApplet;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
@@ -31,7 +32,6 @@ public class Graph extends PApplet {
         createDataPoint(100, 5, 75, 5, pointColors);
         createDataPoint(68, 2, 10, 5, pointColors);
         createDataPoint(47, 87, 30, 5, pointColors);
-
     }
 
     public void draw() {
@@ -44,7 +44,7 @@ public class Graph extends PApplet {
 
         pushMatrix();
         fill(200);
-        rect(0,0,maxDistance, maxDistance);
+        rect(0,0, maxDistance, maxDistance);
 
         // asse x
         stroke(0,100,0);
@@ -67,7 +67,7 @@ public class Graph extends PApplet {
 
 
 
-
+        keyPressed();
 
 
 
@@ -119,11 +119,21 @@ public class Graph extends PApplet {
         popMatrix();
     }
 
+
+
     private void drawGraphLinesVertical(int lines) {
         stroke(200);
         for (int i = 10; i < (lines * 10); i += 10) {
             line(i, 0, 0, i, 0, maxDistance);
             line(0, i, 0, 0, i, maxDistance);
+        }
+    }
+
+    public void keyPressed() {
+        if (key != 'f') {
+            peasyCam.setYawRotationMode();
+        } else {
+            peasyCam.setFreeRotationMode();
         }
     }
 
