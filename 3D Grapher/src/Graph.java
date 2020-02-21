@@ -1,6 +1,7 @@
 import peasy.PeasyCam;
 import processing.core.PApplet;
 
+import javax.xml.crypto.Data;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -11,9 +12,14 @@ import java.util.stream.Collectors;
 public class Graph extends PApplet {
 
     private PeasyCam peasyCam;
-    private ArrayList<Point> points = new ArrayList<>();
+    private static ArrayList<Point> points = new ArrayList<>();
     int maxDistance = 20000;
     int minDistance = 100;
+
+    public static void setData(Point...pointsCollection) {
+        points.addAll(Arrays.asList(pointsCollection));
+
+    }
 
     public void settings () {
         size(500, 500, P3D);
@@ -25,15 +31,15 @@ public class Graph extends PApplet {
         peasyCam.setMaximumDistance(20000);
 
         int pointColors = color(255, 0, 0);
-        createDataPoint(10, 10, 10, 5, pointColors);
-        createDataPoint(25, 10, 50, 5, pointColors);
-        createDataPoint(25, 30, 10, 5, pointColors);
-        createDataPoint(75, 10, 50, 5, pointColors);
-        createDataPoint(100, 5, 75, 5, pointColors);
-        createDataPoint(68, 2, 10, 5, pointColors);
-        createDataPoint(47, 87, 30, 5, pointColors);
+//        createDataPoint(10, 10, 10, 5, pointColors);
+//        createDataPoint(25, 10, 50, 5, pointColors);
+//        createDataPoint(25, 30, 10, 5, pointColors);
+//        createDataPoint(75, 10, 50, 5, pointColors);
+//        createDataPoint(100, 5, 75, 5, pointColors);
+//        createDataPoint(68, 2, 10, 5, pointColors);
+//        createDataPoint(47, 87, 30, 5, pointColors);
     }
-    
+
 
     public void draw() {
 
@@ -92,7 +98,9 @@ public class Graph extends PApplet {
 //        lights();
 //        fill(0,255,0);
 //        sphere(2);
-
+        DataCollector.startTimer();
+        setData(new Point(DataCollector.getRunTimeSeconds(), DataCollector.getRunTimeSeconds(), DataCollector.getRunTimeSeconds(), DataCollector.getRunTimeSeconds()));
+        System.out.println(DataCollector.getRunTimeSeconds());
         drawDataPoints(points);
 
         fill(color(255, 0, 0));

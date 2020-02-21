@@ -61,6 +61,11 @@ public class Point implements Comparable{
         this.pointRadius = pointRadius;
     }
 
+    public Point setColorFromTime( double time ) {
+        this.setColor(color + (int)time);
+        return this;
+    }
+
     @Override
     public int compareTo(Object o) {
         Point op = (Point)o;
