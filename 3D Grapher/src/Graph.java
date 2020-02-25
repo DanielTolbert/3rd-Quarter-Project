@@ -99,7 +99,10 @@ public class Graph extends PApplet {
 //        fill(0,255,0);
 //        sphere(2);
         DataCollector.startTimer();
-        setData(new Point(DataCollector.getRunTimeSeconds(), DataCollector.getRunTimeSeconds(), DataCollector.getRunTimeSeconds(), DataCollector.getRunTimeSeconds()));
+        setData(new Point(DataCollector.getRunTimeSeconds(),
+                DataCollector.getRunTimeSeconds(),
+                DataCollector.getRunTimeSeconds(),
+                DataCollector.getRunTimeSeconds()));
         System.out.println(DataCollector.getRunTimeSeconds());
         drawDataPoints(points);
 
@@ -165,14 +168,14 @@ public class Graph extends PApplet {
         points.add(new Point(x, y, z, pointRadius, color));
     }
 
-    private void  drawDataPoints(List<Point> points) {
+    private void drawDataPoints(List<Point> points) {
         for (Point point : points) {
+            System.out.println("Creating point " + point.toString());
+            sphere(point.getPointRadius());
             translate(point.getX(), point.getY(), point.getZ());
             noStroke();
             lights();
             fill(point.getColor());
-            sphere(point.getPointRadius());
-
         }
     }
 

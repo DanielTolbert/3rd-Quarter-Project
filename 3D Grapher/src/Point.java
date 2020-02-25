@@ -87,4 +87,17 @@ public class Point implements Comparable{
                 this.getPointRadius() == op.getPointRadius();
 
     }
+
+    @Override
+    public String toString() {
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("x: ");
+        stringBuilder.append(this.getX());
+        stringBuilder.append("y: ");
+        stringBuilder.append(this.getY());
+        stringBuilder.append("z: ");
+        stringBuilder.append(this.getZ());
+        return stringBuilder.toString();
+    }
+
 }
