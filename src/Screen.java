@@ -1,25 +1,24 @@
-package sample;
-
-import javafx.scene.input.ScrollEvent;
 import processing.core.PApplet;
 import processing.core.PImage;
 
-public class Main extends PApplet {
+public class Screen extends PApplet {
 
     private PImage img;
     private static final int IMAGE_WIDTH = 904;
     private static final int IMAGE_HEIGHT = 368;
+    private static final int SCREEN_WIDTH = 1920;
+    private static final int SCREEN_HEIGHT = 1080;
 
     private float scale = 3;
-    private int xPos = 0;
-    private int yPos = 0;
+    private float xPos;
+    private float yPos;
 
     public static void main(String[] args) {
-        PApplet.main("sample.Main");
+        PApplet.main("Screen");
     }
 
     public void settings() {
-        size(1920, 1080);
+        size(SCREEN_WIDTH, SCREEN_HEIGHT);
     }
 
     public void setup() {
@@ -28,6 +27,9 @@ public class Main extends PApplet {
     }
 
     public void draw() {
+        clear();
+        xPos = SCREEN_WIDTH/2 - ((IMAGE_WIDTH/2) * scale);
+        yPos = SCREEN_HEIGHT/2 - ((IMAGE_HEIGHT/2) * scale);
         image(img, xPos, yPos, IMAGE_WIDTH * scale, IMAGE_HEIGHT * scale);
     }
 
