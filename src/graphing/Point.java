@@ -1,3 +1,5 @@
+package graphing;
+
 public class Point implements Comparable{
 
     private int x;

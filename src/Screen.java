@@ -1,3 +1,4 @@
+import graphing.Point;
 import processing.core.PApplet;
 import processing.core.PImage;
 
@@ -15,7 +16,7 @@ public class Screen extends PApplet {
     private float xPos;
     private float yPos;
 
-    private List<Point> points;
+//    private List<Point> points;
 
     public static void main(String[] args) {
         PApplet.main("Screen");
@@ -26,7 +27,7 @@ public class Screen extends PApplet {
     }
 
     public void setup() {
-        points = DataParser.getPoints();
+//        points = DataParser.getPoints();
         background(0);
         img = loadImage("stad_2.png");
     }

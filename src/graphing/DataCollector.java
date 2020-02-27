@@ -1,3 +1,5 @@
+package graphing;
+
 import java.util.Timer;
 
 public class DataCollector {
