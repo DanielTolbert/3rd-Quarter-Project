@@ -1,5 +1,7 @@
 package graphing;
 
+import graphing.Graph;
+
 import java.util.Timer;
 
 public class DataCollector {
@@ -16,6 +18,10 @@ public class DataCollector {
 
     public static int getRunTimeSeconds() {
         return (int) ( ( Math.abs(mStartTime - System.currentTimeMillis() )) / 1000 );
+    }
+
+    public static float getMillis() {
+        return Math.abs(mStartTime - System.currentTimeMillis());
     }
 
     public static void collectData() {

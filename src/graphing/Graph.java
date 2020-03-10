@@ -3,12 +3,9 @@ package graphing;
 import peasy.PeasyCam;
 import processing.core.PApplet;
 
-import javax.xml.crypto.Data;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class Graph extends PApplet {
@@ -33,8 +30,8 @@ public class Graph extends PApplet {
 
     public void setup() {
         peasyCam = new PeasyCam(this, 500);
-        peasyCam.setMinimumDistance(100);
-        peasyCam.setMaximumDistance(20000);
+        peasyCam.setMinimumDistance(minDistance);
+        peasyCam.setMaximumDistance(maxDistance);
 
         int pointColors = color(255, 0, 0);
         createDataPoint(10, 10, 10, 5, pointColors);
