@@ -21,7 +21,6 @@ public class ImageProcessor {
     }
 
     private BufferedImage readImage(String filePath) {
-
         try {
             return ImageIO.read(getClass().getResource(filePath));
         } catch (IOException e) {
@@ -32,10 +31,10 @@ public class ImageProcessor {
     }
 
     public void processImage(Position p) {
-        int cropCenterX = IMAGE_WIDTH/2 - (p.getX() * X_SCALE);
-        int cropCenterY = IMAGE_HEIGHT/2 + (p.getY() * Y_SCALE);
+        int cropCenterX = IMAGE_WIDTH/2 - (int) (p.getX() * X_SCALE);
+        int cropCenterY = IMAGE_HEIGHT/2 + (int) (p.getY() * Y_SCALE);
 
-        int cropWidth = p.getZ() * Z_SCALE;
+        int cropWidth = (int) (p.getZ() * Z_SCALE);
         int cropHeight = (int) (cropWidth / ((double) IMAGE_WIDTH / IMAGE_HEIGHT));
 
         cropCenterX = Math.min(cropCenterX, IMAGE_WIDTH - (cropWidth/2));
@@ -43,13 +42,10 @@ public class ImageProcessor {
         cropCenterY = Math.min(cropCenterY, IMAGE_HEIGHT - (cropHeight/2));
         cropCenterY = Math.max(cropCenterY, 0);
 
-        System.out.println(cropCenterX + " " + cropWidth + " : " + cropCenterY + " " + cropHeight);
-        System.out.println((cropCenterX - (cropWidth/2) + cropWidth) + " " + (cropCenterY - (cropHeight/2) + cropHeight));
-
         image = image.getSubimage(cropCenterX - (cropWidth/2), cropCenterY - (cropHeight/2), cropWidth - 1, cropHeight - 1);
         image = scaleImage(image);
 
-        writeImage();
+        writeImage(p.getIndex());
     }
 
     private BufferedImage scaleImage(BufferedImage inputImage) {
@@ -62,24 +58,12 @@ public class ImageProcessor {
         return scaledImage;
     }
 
-    private void writeImage() {
+    private void writeImage(int index) {
         try {
-            ImageIO.write(image, "png", new File("src/resources/images/output_image.png"));
+            ImageIO.write(image, "png", new File("src/resources/images/output/output_image" + index + ".png"));
         }
         catch (IOException e) {
             e.printStackTrace();
         }
     }
-
-//    private void defineXPos() {
-//        xPos = SCREEN_WIDTH/2 - ((IMAGE_WIDTH/2) * zoomScale);
-//
-//        xPos += position.getX() * transmutationScale;
-//    }
-//
-//    private void defineYPos() {
-//        yPos = SCREEN_HEIGHT/2 - ((IMAGE_HEIGHT/2) * zoomScale);
-//
-//        yPos += position.getY() * transmutationScale;
-//    }
 }
