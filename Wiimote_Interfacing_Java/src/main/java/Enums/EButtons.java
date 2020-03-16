@@ -1,6 +1,6 @@
 package Enums;
 
-import org.wiigee.device.Wiimote;
+import device.Wiimote;
 
 public enum EButtons {
 
