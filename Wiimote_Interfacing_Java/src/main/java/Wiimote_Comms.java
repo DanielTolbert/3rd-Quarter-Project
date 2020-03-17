@@ -19,6 +19,7 @@ public class Wiimote_Comms
 
         try {
             System.setProperty("bluecove.jsr82.psm_minimum_off", "true");
+
             wiigee = wiimoteDeviceDiscovery.getDiscoveredWiimotes()[0];
             wiigee.setTrainButton(Wiimote.BUTTON_A);
             wiigee.setCloseGestureButton(Wiimote.BUTTON_HOME);

@@ -17,5 +17,5 @@ dependencies {
 
     testCompile group: 'junit', name: 'junit', version: '4.12'
 //    compile files('libs/wiigee-lib-1.5.6.jar', 'libs/wiigee-plugin-wiimote-1.5.6.jar', 'libs/bluecove-2.1.1.jar')
-    compile files('libs/wiigee_v11.jar','libs/bluecove-2.1.1.jar')
+    compile files('libs/wiigee_v11.jar','libs/bluecove-2.1.1-SNAPSHOT.jar')
 }

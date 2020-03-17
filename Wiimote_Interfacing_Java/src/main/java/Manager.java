@@ -11,6 +11,8 @@ public class Manager {
 
     public static void main( String[] args ) {
 
+        System.setProperty("bluecove.stack", "widcomm");
+
         Object lock = new Object();
         DeviceDiscovery wiimoteDeviceDiscovery = new DeviceDiscovery( );
 
@@ -18,14 +20,7 @@ public class Manager {
             LocalDevice localDevice = LocalDevice.getLocalDevice();
             DiscoveryAgent agent = localDevice.getDiscoveryAgent();
             agent.startInquiry(DiscoveryAgent.GIAC, wiimoteDeviceDiscovery);
-
-            try {
-                synchronized (lock) {
-                    lock.wait();
-                }
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            while ( wiimoteDeviceDiscovery.isInquirying() ) { }
             System.out.println("Device Inquiry Completed. ");
 
         } catch (Exception e) {
