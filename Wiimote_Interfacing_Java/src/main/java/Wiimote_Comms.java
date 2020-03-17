@@ -17,6 +17,8 @@ public class Wiimote_Comms
     private static Wiimote wiigee;
 
     public Wiimote_Comms() {
+        System.setProperty(BlueCoveConfigProperties.PROPERTY_STACK, "widcomm");
+        System.setProperty(BlueCoveConfigProperties.PROPERTY_JSR_82_PSM_MINIMUM_OFF, "true");
 
         Object lock = new Object();
         WiimoteDeviceDiscovery wiimoteDeviceDiscovery = new WiimoteDeviceDiscovery( lock );
@@ -41,7 +43,6 @@ public class Wiimote_Comms
 
 
         try {
-            System.setProperty(BlueCoveConfigProperties.PROPERTY_JSR_82_PSM_MINIMUM_OFF, "true");
             wiigee = wiimoteDeviceDiscovery.getDiscoveredWiimotes().firstElement();
             wiigee.setTrainButton(Wiimote.BUTTON_A);
             wiigee.setCloseGestureButton(Wiimote.BUTTON_HOME);
