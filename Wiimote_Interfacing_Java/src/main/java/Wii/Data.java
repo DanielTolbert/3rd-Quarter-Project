@@ -1,3 +1,5 @@
+package Wii;
+
 import Enums.*;
 import FRCCodexClasses.Codex;
 
