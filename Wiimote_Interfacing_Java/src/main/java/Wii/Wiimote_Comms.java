@@ -3,8 +3,8 @@ package Wii;
 import Enums.EButtons;
 import Enums.EGyro;
 import Enums.EInfared;
-import com.intel.bluetooth.BlueCoveConfigProperties;
 import org.wiigee.control.WiimoteDeviceDiscovery;
+import org.wiigee.control.WiimoteWiigee;
 import org.wiigee.device.Wiimote;
 import org.wiigee.event.*;
 
@@ -16,33 +16,35 @@ public class Wiimote_Comms
     private static Wiimote wiigee;
 
     public Wiimote_Comms() {
-        System.setProperty(BlueCoveConfigProperties.PROPERTY_STACK, "widcomm");
-        System.setProperty(BlueCoveConfigProperties.PROPERTY_JSR_82_PSM_MINIMUM_OFF, "true");
+//        System.setProperty(BlueCoveConfigProperties.PROPERTY_STACK, "WIDCOMM");
+//        System.setProperty(BlueCoveConfigProperties.PROPERTY_JSR_82_PSM_MINIMUM_OFF, "true");
 
-        Object lock = new Object();
-        WiimoteDeviceDiscovery wiimoteDeviceDiscovery = new WiimoteDeviceDiscovery( lock );
+//        Object lock = new Object();
+//        WiimoteDeviceDiscovery wiimoteDeviceDiscovery = new WiimoteDeviceDiscovery( lock );
+//
+//        try {
+//            LocalDevice localDevice = LocalDevice.getLocalDevice();
+//            DiscoveryAgent agent = localDevice.getDiscoveryAgent();
+//            agent.startInquiry(DiscoveryAgent.GIAC, wiimoteDeviceDiscovery);
+//
+//            try {
+//                synchronized (lock) {
+//                    lock.wait();
+//                }
+//            } catch (InterruptedException e) {
+//                e.printStackTrace();
+//            }
+//            System.out.println("Device Inquiry Completed. ");
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
+
 
         try {
-            LocalDevice localDevice = LocalDevice.getLocalDevice();
-            DiscoveryAgent agent = localDevice.getDiscoveryAgent();
-            agent.startInquiry(DiscoveryAgent.GIAC, wiimoteDeviceDiscovery);
-
-            try {
-                synchronized (lock) {
-                    lock.wait();
-                }
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            System.out.println("Device Inquiry Completed. ");
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-
-        try {
-            wiigee = wiimoteDeviceDiscovery.getDiscoveredWiimotes().firstElement();
+            WiimoteWiigee wiimoteWiigee = new WiimoteWiigee();
+//            wiigee = wiimoteDeviceDiscovery.getDiscoveredWiimotes().firstElement();
+            wiigee = wiimoteWiigee.getDevice();
             wiigee.setTrainButton(Wiimote.BUTTON_A);
             wiigee.setCloseGestureButton(Wiimote.BUTTON_HOME);
             wiigee.setRecognitionButton(Wiimote.BUTTON_B);
