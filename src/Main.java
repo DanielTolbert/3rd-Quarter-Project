@@ -12,8 +12,8 @@ public class Main {
 
     public static void main(String[] args) {
         createPositions();
-        calculateImages();
-        createVideo();
+        calculateImages("/resources/images/stad_2.png");
+        createVideo(30);
     }
 
     private static void createPositions() {
@@ -26,22 +26,22 @@ public class Main {
         }
     }
 
-    private static void calculateImages() {
+    private static void calculateImages(String filePath) {
         for (Position p : positions) {
-            ImageProcessor image = new ImageProcessor("/resources/images/stad_2.png");
+            ImageProcessor image = new ImageProcessor(filePath);
             image.processImage(p);
         }
     }
 
-    private static void createVideo() {
+    private static void createVideo(int framerate) {
         try {
             ProcessBuilder processBuilder = new ProcessBuilder(
                     "ffmpeg",
-                    "-r", "30",
-                    "-s", "904x368",
+                    "-r", Integer.toString(framerate),
+                    "-s", ImageProcessor.IMAGE_WIDTH + "x" + ImageProcessor.IMAGE_HEIGHT,
                     "-i", "../../images/output/output_image%d.png",
                     "-vcodec", "libx264",
-                    "-crf", "25",
+                    "-crf", "15",
                     "-pix_fmt", "yuv420p",
                     "output_video.mp4",
                     "-y"

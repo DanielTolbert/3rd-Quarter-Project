@@ -8,8 +8,8 @@ import java.io.IOException;
 
 public class ImageProcessor {
 
-    private static final int IMAGE_WIDTH = 904;
-    private static final int IMAGE_HEIGHT = 368;
+    public static final int IMAGE_WIDTH = 904;
+    public static final int IMAGE_HEIGHT = 368;
     private static final int Z_SCALE = 400;
     private static final int X_SCALE = 100;
     private static final int Y_SCALE = 50;
